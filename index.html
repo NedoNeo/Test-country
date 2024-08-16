@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
-<body>
-    <h1>Список дел</h1>
-    <form class="task-adder">
-        <div class="input_container">
-        <div class="task_name-container">
-            <p class="allert_name allert hidden">Введите название задачи!</p>
-            <input type="text" placeholder="Название Задачи" name="task_name" class="input_name">
-        </div>
-        <div class="task-counter">
-            <p class="allert_description allert hidden">Введите описание задачи!</p>
-            <textarea placeholder="Описание Задачи" name="description" class="input_description task-description_area"></textarea>
-        </div>
-        </div>
-        <div class="task-desrciprion">
-        </div>
-        <div class="button_container">
-        <button type="button" class="add_button button_style">добавить подзадачу</button>
-        <button type="reset" class="reset_button button_style">Очистить Все</button>
-        <button type="submit" class="submit_button button_style">Добавить Задачу</button>
-        </div>
-    </form>
-    <div class="tasks-box">
-        <div class="task_container task_container-style">
-            <h2>Активные задачи:</h2>
-        </div>
-        <div class="complite_task task_container-style">
-            <h2>Завершенные задачи</h2>
-        </div>
-    </div>
+<body class="wrapper">
+    <header class="header">
+        <a href="#" class="header__logo-link"><img src="img/Logo.svg" alt="logo" class="header__logo"> Global</a>
+        <nav class="header__nav">
+            <span class="burger"></span>
+            <ul class="header__list">
+                <li class="header__list-item selected"><a href="#">Mobile Top Up</a></li>
+                <li class="header__list-item"><a href="#">About</a></li>
+                <li class="header__list-item"><a href="#">Rate</a></li>
+                <li class="header__list-item"><a href="#">Help</a></li>
+                <li class="header__list-item sign-up"><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <div class="main__section-container">
+                <h1 class="main__section-title"><span>Now Buy Your</span> <span>PIN or <span class="gold">Top Up</span></span> <span>With Bank Transfer</span></h1>
+                <p class="main__section-description">We Make international calling simple, relible, and cheap basedon your unique calling behavior.</p>
+                <a href="#" class="main__section-link">Get Started</a>
+                <form class="input__container">
+                    <input type="search" name="search" placeholder="Where do you want to call?" minlength="4" maxlength="12">
+                    <button type="submit"></button>
+                </form>
+                <footer class="main__footer">
+                    <div class="main__footer-container">
+                        <img src="img/footer-img1.png" alt="" class="main__footer-img one">
+                        <img src="img/footer-img2.png" alt="" class="main__footer-img two">
+                        <img src="img/footer-img3.png" alt="" class="main__footer-img three">
+                        <div class="main__footer-plus"></div>
+                    </div>
+                    <span class="main__footer-description">45k+ Regular User. <a href="#" class="main__footer-link gold">View Price Plan</a></span>
+                </footer>
+            </div>
+            <div class="main__section-container">
+                <div class="animated-container">
+                    <div class="green-circle"></div>
+                    <img src="img/girl.png" alt="" class="animated-img">
+                    <div class="cirle-animated">
+                        <img src="img/indianflag.png" alt="" class="animated-country country-1">
+                        <img src="img/Britainflag.png" alt="" class="animated-country country-2">
+                        <img src="img/Italianflag.png" alt="" class="animated-country country-3">
+                        <img src="img/indianflag.png" alt="" class="animated-country country-4">
+                        <img src="img/indianflag.png" alt="" class="animated-country country-5">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-<script src="./index.js"></script>
 </html>
